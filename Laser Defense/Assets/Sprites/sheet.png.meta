@@ -300,10 +300,10 @@ TextureImporter:
       name: sheet_8
       rect:
         serializedVersion: 2
-        x: 346
-        y: 790
-        width: 189
-        height: 234
+        x: 444
+        y: 933
+        width: 91
+        height: 91
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,10 +659,10 @@ TextureImporter:
         serializedVersion: 2
         x: 518
         y: 131
-        width: 90
+        width: 89
         height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -683,7 +683,7 @@ TextureImporter:
         width: 92
         height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -704,7 +704,7 @@ TextureImporter:
         width: 82
         height: 82
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -712,6 +712,174 @@ TextureImporter:
       bones: []
       spriteID: e30c7f4f47b11f64588e97ab8f58d44d
       internalID: 934062235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_28
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 615
+        width: 81
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6e9fa85b275714186aedc16da3f444
+      internalID: -1572743497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_29
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 421
+        width: 102
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283b7d7d9fa650e4bb7391ebc5220746
+      internalID: 1334688592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_30
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 2
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 855111e11debaae4e875fa05515f0037
+      internalID: -1874740406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 732
+        width: 144
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a71d75c6bcfdf854ba89e32010b54d55
+      internalID: -366272457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_32
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 377
+        width: 14
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ce267d2cbb9b5428269958b971ce11
+      internalID: -1583144165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_33
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 47
+        width: 12
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e88d85fda58c340b88ad1a5c795470
+      internalID: 396334426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_34
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 874
+        width: 98
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3faecda4ea68746a15afe9202c66e6
+      internalID: -118964902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 985
+        width: 222
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4decaa705d0793943934c80bc801026d
+      internalID: -665688326
       vertices: []
       indices: 
       edges: []
@@ -738,13 +906,19 @@ TextureImporter:
       sheet_9: -563424856
       sheet_22: 677256105
       sheet_27: 934062235
+      sheet_31: -366272457
+      sheet_35: -665688326
       sheet_5: -1290402206
       sheet_2: 254169740
       sheet_8: 1552800299
+      sheet_32: -1583144165
       sheet_24: 62157271
+      sheet_34: -118964902
+      sheet_29: 1334688592
       sheet_6: 1609381142
       sheet_20: 1794363781
       sheet_13: 904496330
+      sheet_28: -1572743497
       sheet_23: -1565082084
       sheet_18: -702927968
       sheet_16: 1213559896
@@ -753,8 +927,10 @@ TextureImporter:
       sheet_11: 1928409613
       sheet_4: -1145621470
       sheet_3: -213589238
+      sheet_30: -1874740406
       sheet_21: -269319056
       sheet_15: -1043076600
+      sheet_33: 396334426
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
