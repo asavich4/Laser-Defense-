@@ -24,4 +24,8 @@ public class Lazer : MonoBehaviour
     void LazerMovement(){
         myRigidbody2d.velocity = new Vector2(xArrow, playerDirection);
     }
+
+    void OnCollisionEnter2D(Collision2D other) {
+        Destroy(gameObject);
+    }
 }

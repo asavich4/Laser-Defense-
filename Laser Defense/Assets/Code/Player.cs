@@ -10,6 +10,9 @@ public class Player : MonoBehaviour
     Animator myAnimator;
 
     [SerializeField] float runSpeed = 5;
+
+    [SerializeField] GameObject Lazer;
+    [SerializeField]Transform Gun;
     void Start(){
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
@@ -19,6 +22,10 @@ public class Player : MonoBehaviour
  
     void Update(){
         Run();
+    }
+
+     void OnFire(InputValue value){
+        Instantiate(Lazer, Gun.position, transform.rotation);
     }
 
     void OnMove(InputValue value){
