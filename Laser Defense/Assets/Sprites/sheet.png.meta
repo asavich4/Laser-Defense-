@@ -470,7 +470,7 @@ TextureImporter:
         serializedVersion: 2
         x: 675
         y: 771
-        width: 85
+        width: 44
         height: 130
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -615,10 +615,10 @@ TextureImporter:
       name: sheet_23
       rect:
         serializedVersion: 2
-        x: 738
-        y: 487
-        width: 129
-        height: 480
+        x: 761
+        y: 795
+        width: 36
+        height: 37
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,7 +659,7 @@ TextureImporter:
         serializedVersion: 2
         x: 518
         y: 131
-        width: 89
+        width: 88
         height: 82
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -872,7 +872,7 @@ TextureImporter:
         width: 222
         height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -880,6 +880,132 @@ TextureImporter:
       bones: []
       spriteID: 4decaa705d0793943934c80bc801026d
       internalID: -665688326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_36
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 502
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb787864c1a927c428cc497f2b06bad4
+      internalID: -1940010765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_37
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 738
+        width: 49
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f402275b9382d49a433d59c01d762a
+      internalID: 2080968650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_38
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 532
+        width: 45
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e95a6c8df2d7c4469b1347b8af7a93e
+      internalID: 906150446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_39
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 374
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35faba8c5ff9589489fa43d9a8e9c31a
+      internalID: -2105427120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_40
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 300
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ba5ef6739b9734b9d490e5636190f8
+      internalID: -437489555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sheet_41
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 360
+        width: 103
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 156262c37fb877a4db7cb9f9b701b5f3
+      internalID: 1481625768
       vertices: []
       indices: 
       edges: []
@@ -898,11 +1024,14 @@ TextureImporter:
       sheet_25: 1195753679
       sheet_12: -430565301
       sheet_26: -1075420544
+      sheet_39: -2105427120
       sheet_7: 1805124503
       sheet_17: -1420258922
       sheet_14: 76673443
       sheet_0: 1309284820
+      sheet_37: 2080968650
       sheet_10: 1207701908
+      sheet_40: -437489555
       sheet_9: -563424856
       sheet_22: 677256105
       sheet_27: 934062235
@@ -911,7 +1040,9 @@ TextureImporter:
       sheet_5: -1290402206
       sheet_2: 254169740
       sheet_8: 1552800299
+      sheet_38: 906150446
       sheet_32: -1583144165
+      sheet_41: 1481625768
       sheet_24: 62157271
       sheet_34: -118964902
       sheet_29: 1334688592
@@ -920,6 +1051,7 @@ TextureImporter:
       sheet_13: 904496330
       sheet_28: -1572743497
       sheet_23: -1565082084
+      sheet_36: -1940010765
       sheet_18: -702927968
       sheet_16: 1213559896
       sheet_19: 2132799860
