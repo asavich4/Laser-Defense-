@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
 
     [SerializeField] GameObject Lazer;
     [SerializeField]Transform Gun;
+    
+    [SerializeField] AudioClip shootSound;
     void Start(){
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
@@ -33,6 +35,7 @@ public class Player : MonoBehaviour
 
      void OnFire(InputValue value){
         Instantiate(Lazer, Gun.position, transform.rotation);
+        AudioSource.PlayClipAtPoint(shootSound, Camera.main.transform.position);
     }
 
     void OnMove(InputValue value){

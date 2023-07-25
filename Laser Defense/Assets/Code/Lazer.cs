@@ -10,11 +10,13 @@ public class Lazer : MonoBehaviour
     float playerDirection;
     [SerializeField] float xArrow;
     [SerializeField] float yArrow;
+    [SerializeField] AudioClip shootSound;
     void Start(){
         myRigidbody2d = GetComponentInChildren<Rigidbody2D>();
         LazerBox = GetComponentInChildren<BoxCollider2D>();
         player = FindObjectOfType<Player>();
         playerDirection = player.transform.localScale.x * yArrow;
+         AudioSource.PlayClipAtPoint(shootSound, Camera.main.transform.position);
     }
 
     void Update(){
