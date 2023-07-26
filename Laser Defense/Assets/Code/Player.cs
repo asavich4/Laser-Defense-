@@ -42,6 +42,11 @@ public class Player : MonoBehaviour
         moveInput = value.Get<Vector2>();
     }
 
+    void  OnCollisionEnter2D(Collision2D collision) {
+        Destroy(gameObject);
+        Destroy(collision.gameObject);
+    }
+
      void Run(){
         Vector2 playerVelocity = new Vector2(moveInput.x * runSpeed * Time.deltaTime, moveInput.y * runSpeed * Time.deltaTime);
         myRigidbody.velocity = playerVelocity;
