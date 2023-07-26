@@ -10,13 +10,11 @@ public class Lazer : MonoBehaviour
     float playerDirection;
     [SerializeField] float xArrow;
     [SerializeField] float yArrow;
-    [SerializeField] AudioClip shootSound;
     void Start(){
         myRigidbody2d = GetComponentInChildren<Rigidbody2D>();
         LazerBox = GetComponentInChildren<BoxCollider2D>();
         player = FindObjectOfType<Player>();
         playerDirection = player.transform.localScale.x * yArrow;
-         AudioSource.PlayClipAtPoint(shootSound, Camera.main.transform.position);
     }
 
     void Update(){
@@ -27,7 +25,12 @@ public class Lazer : MonoBehaviour
         myRigidbody2d.velocity = new Vector2(xArrow, playerDirection);
     }
 
-    void OnCollisionEnter2D(Collision2D other) {
+    void OnCollisionEnter2D(Collision2D collision){
+        Destroy(gameObject);
+        Destroy(collision.gameObject);
+    }
+
+    void OnTriggerEnter2D(Collider2D other) {
         Destroy(gameObject);
     }
 }

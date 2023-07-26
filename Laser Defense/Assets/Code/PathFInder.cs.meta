@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 39562759e2c27e646b3c3ec0f4c538ab
+guid: 37af2ecee3262764496e6e2cd7d04baa
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - pathPreFab: {instanceID: 0}
+  - waveSO: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
