@@ -22,8 +22,6 @@ public class PathFInder : MonoBehaviour
         Vector3 targetPosition = waypoints[waypointIndex].position;
         float distanceToTarget = Vector3.Distance(transform.position, targetPosition);
         float maxDistanceDelta = waveSO.GetMoveSpeed() * Time.deltaTime;
-
-        // Use Vector3.Lerp for smooth interpolation
         transform.position = Vector3.Lerp(transform.position, targetPosition, maxDistanceDelta / distanceToTarget);
         if (distanceToTarget <= maxDistanceDelta){
             waypointIndex++;
