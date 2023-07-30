@@ -9,12 +9,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4759179473132309130, guid: f68789f45730f3f48ae5576dd5a4f52a, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: Enemy Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5983360311930687473, guid: f68789f45730f3f48ae5576dd5a4f52a, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1145621470, guid: 58dd3a4e9e7ef854f962a697b580ffcb, type: 3}
+    - target: {fileID: 6512413237928136729, guid: f68789f45730f3f48ae5576dd5a4f52a, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7622467460006093871, guid: f68789f45730f3f48ae5576dd5a4f52a, type: 3}
       propertyPath: m_RootOrder
       value: 0

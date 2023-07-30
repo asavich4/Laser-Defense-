@@ -438,7 +438,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f39c1d75ab05c54428fae984d6502047, type: 2}
   - {fileID: 11400000, guid: cc548e4ffec095843810d099cf1aa7de, type: 2}
   - {fileID: 11400000, guid: 38d62848b15a0084da85506ff4c26a19, type: 2}
-  timeBetweenWaveSpawns: 1
+  - {fileID: 11400000, guid: b5ddca7f33eed934abd2f21b16e4f1dd, type: 2}
+  - {fileID: 11400000, guid: 556524d9f77eb434d8c81684dfb772d4, type: 2}
+  timeBetweenWaveSpawns: 3
   isLooping: 1
 --- !u!4 &1855107607
 Transform:
