@@ -7,6 +7,9 @@ public class WaveSO : ScriptableObject
 {
     [SerializeField] List <GameObject> enemyPrefabs;
     [SerializeField] Transform pathPreFab;
+    [SerializeField] float timeBetweenSpawns = 1;
+    [SerializeField] float spawnTimeVariance = 0;
+    [SerializeField] float minimumSpawnTime = 0.2f;
     [SerializeField] float moveSpeed;
 
     public int GetEnemyCount(){
@@ -31,4 +34,8 @@ public class WaveSO : ScriptableObject
         return moveSpeed;
     }
 
+    public float GetRandomSpawnTime(){
+        float spawnTime = Random.Range(timeBetweenSpawns - spawnTimeVariance, timeBetweenSpawns + spawnTimeVariance);
+        return Mathf.Clamp(spawnTime, minimumSpawnTime, float.MaxValue);
+    }
 }
