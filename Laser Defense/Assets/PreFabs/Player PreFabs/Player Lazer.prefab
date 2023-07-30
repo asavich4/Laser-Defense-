@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xArrow: 0
-  yArrow: 10
+  yArrow: 18
 --- !u!50 &8894974421629948863
 Rigidbody2D:
   serializedVersion: 4

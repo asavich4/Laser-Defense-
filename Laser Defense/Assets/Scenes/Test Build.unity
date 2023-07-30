@@ -412,6 +412,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1855107607}
   - component: {fileID: 1855107606}
+  - component: {fileID: 1855107609}
+  - component: {fileID: 1855107608}
   m_Layer: 0
   m_Name: Spawer
   m_TagString: Untagged
@@ -435,7 +437,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 62bbbdc3edf45764c8e783bc31283827, type: 2}
   - {fileID: 11400000, guid: f39c1d75ab05c54428fae984d6502047, type: 2}
   - {fileID: 11400000, guid: cc548e4ffec095843810d099cf1aa7de, type: 2}
+  - {fileID: 11400000, guid: 38d62848b15a0084da85506ff4c26a19, type: 2}
   timeBetweenWaveSpawns: 1
+  isLooping: 1
 --- !u!4 &1855107607
 Transform:
   m_ObjectHideFlags: 0
@@ -451,6 +455,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1855107608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855107605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c2162654b1092b4e990066145f9d395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1855107609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855107605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: afe2747f21cd92e4690d51055fbc6f36, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1001 &8815933841536548777
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -459,8 +505,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 8815933842460022920, guid: 35f4f4d0fdfe6b64e9f1a4952034c94e, type: 3}
+      propertyPath: runSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815933842460022920, guid: 35f4f4d0fdfe6b64e9f1a4952034c94e, type: 3}
       propertyPath: fireCooldown
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8815933842460022922, guid: 35f4f4d0fdfe6b64e9f1a4952034c94e, type: 3}
       propertyPath: m_RootOrder
