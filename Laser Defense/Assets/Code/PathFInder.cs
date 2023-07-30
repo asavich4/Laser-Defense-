@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class PathFInder : MonoBehaviour
 {
-    [SerializeField] WaveSO waveSO;
+
+    Spawner enemySpawner;
+    WaveSO waveSO;
     List<Transform> waypoints;
     int waypointIndex = 0;
+
+    void Awake() {
+        enemySpawner = FindObjectOfType<Spawner>();
+    }
     void Start(){
+        waveSO = enemySpawner.GetCurrentWave();
         waypoints = waveSO.GetWaypoints();
         transform.position = waypoints[waypointIndex].position;
     }
@@ -16,8 +23,7 @@ public class PathFInder : MonoBehaviour
         FollowPath();
     }
 
-    void FollowPath()
-{
+    void FollowPath(){
     if (waypointIndex < waypoints.Count){
         Vector3 targetPosition = waypoints[waypointIndex].position;
         float distanceToTarget = Vector3.Distance(transform.position, targetPosition);
