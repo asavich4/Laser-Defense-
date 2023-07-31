@@ -26,6 +26,8 @@ public class Player : MonoBehaviour
     
     [SerializeField] float fireCooldown = 0.5f;
     private bool canFire = true;
+    int lives = 3;
+    int hits = 0;
 
     void Start(){
         myRigidbody = GetComponent<Rigidbody2D>();
