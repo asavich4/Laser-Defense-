@@ -235,7 +235,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -511,8 +511,24 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8815933842460022920, guid: 35f4f4d0fdfe6b64e9f1a4952034c94e, type: 3}
+      propertyPath: flashTimer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815933842460022920, guid: 35f4f4d0fdfe6b64e9f1a4952034c94e, type: 3}
+      propertyPath: isFlashing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815933842460022920, guid: 35f4f4d0fdfe6b64e9f1a4952034c94e, type: 3}
       propertyPath: fireCooldown
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815933842460022920, guid: 35f4f4d0fdfe6b64e9f1a4952034c94e, type: 3}
+      propertyPath: flashDuration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8815933842460022920, guid: 35f4f4d0fdfe6b64e9f1a4952034c94e, type: 3}
+      propertyPath: flashTimerReset
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8815933842460022922, guid: 35f4f4d0fdfe6b64e9f1a4952034c94e, type: 3}
       propertyPath: m_RootOrder

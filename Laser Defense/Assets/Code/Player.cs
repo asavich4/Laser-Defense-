@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     Vector2 moveInput;
     Rigidbody2D myRigidbody;
     Animator myAnimator;
+    SpriteRenderer playerSpriteRenderer;
 
     [SerializeField] float runSpeed = 5;
 
@@ -26,17 +27,22 @@ public class Player : MonoBehaviour
     
     [SerializeField] float fireCooldown = 0.5f;
     private bool canFire = true;
-    int lives = 3;
-    int hits = 0;
+    [SerializeField] int lives = 3;
+
+    [SerializeField] float flashTimerReset = 1f;
+    [SerializeField] float flashTimer = 1f;
+    [SerializeField] bool isFlashing = false;
 
     void Start(){
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
+        playerSpriteRenderer = GetComponent<SpriteRenderer>();
         Bounds();
     }
 
     void Update(){
         Run();
+        playerFlash();
         if (canFire && Input.GetButton("Fire1")){
             StartCoroutine(FireCooldown());
         }
@@ -54,9 +60,35 @@ public class Player : MonoBehaviour
         moveInput = value.Get<Vector2>();
     }
 
-    void OnCollisionEnter2D(Collision2D collision){
-        Destroy(gameObject);
-        Destroy(collision.gameObject);
+    void OnTriggerEnter2D(Collider2D other){
+    if(isFlashing == false){ 
+        if (other.CompareTag("Enemy")){
+            Destroy(other.gameObject);
+            lives--;
+            if(lives <= 0){
+                Destroy(gameObject);
+                    }
+            else{
+                isFlashing = true;
+            }
+        }
+    }
+    }
+
+    void playerFlash(){
+        if (isFlashing){
+            flashTimer -= Time.deltaTime;
+            if(flashTimer > 0){
+                playerSpriteRenderer.enabled = !playerSpriteRenderer.enabled;
+            }
+                else if(flashTimer <= 0f){
+                    isFlashing = false;
+                    flashTimer = flashTimerReset;
+                }
+        }
+        else{
+            playerSpriteRenderer.enabled = true;
+        }
     }
 
     void Run(){
