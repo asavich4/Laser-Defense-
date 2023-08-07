@@ -24,13 +24,15 @@ public class Lazer : MonoBehaviour
     void LazerMovement(){
         myRigidbody2d.velocity = new Vector2(xArrow, playerDirection);
     }
-
-    void OnCollisionEnter2D(Collision2D collision){
-        Destroy(gameObject);
-        Destroy(collision.gameObject);
+    void OnTriggerEnter2D(Collider2D other){
+        if (other.CompareTag("Enemy")){
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
     }
-
-    void OnTriggerEnter2D(Collider2D other) {
+            
+    void OnCollisionEnter2D(Collision2D other) {
         Destroy(gameObject);
     }
 }
+
