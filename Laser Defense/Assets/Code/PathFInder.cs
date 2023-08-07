@@ -9,6 +9,8 @@ public class PathFInder : MonoBehaviour
     WaveSO waveSO;
     List<Transform> waypoints;
     int waypointIndex = 0;
+    [SerializeField] GameObject deathPrefab; 
+    Player player;
 
     void Awake() {
         enemySpawner = FindObjectOfType<Spawner>();
@@ -37,9 +39,9 @@ public class PathFInder : MonoBehaviour
         Destroy(gameObject);
     }
 }
-    void OnCollisionEnter2D(Collision2D collision){
-        Destroy(gameObject);
-        Destroy(collision.gameObject);
+    void OnTriggerEnter2D(Collider2D other){
+    if(other.CompareTag("Lazer")){
+        GameObject deathHit = Instantiate(deathPrefab, transform.position, transform.rotation);
     }
-
+    }
 }

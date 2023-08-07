@@ -1,20 +1,24 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6542542219107265346
+--- !u!1001 &1270709656627386308
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 693708400437642074, guid: f68789f45730f3f48ae5576dd5a4f52a, type: 3}
+      propertyPath: deathPrefab
+      value: 
+      objectReference: {fileID: 3245862485797455376, guid: f256d48e5eca5ea47b9475f9411e2abb, type: 3}
     - target: {fileID: 4759179473132309130, guid: f68789f45730f3f48ae5576dd5a4f52a, type: 3}
       propertyPath: m_Name
-      value: Enemy Variant 1
+      value: Enemy Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5983360311930687473, guid: f68789f45730f3f48ae5576dd5a4f52a, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 254169740, guid: 58dd3a4e9e7ef854f962a697b580ffcb, type: 3}
+      objectReference: {fileID: -1145621470, guid: 58dd3a4e9e7ef854f962a697b580ffcb, type: 3}
     - target: {fileID: 6512413237928136729, guid: f68789f45730f3f48ae5576dd5a4f52a, type: 3}
       propertyPath: m_BodyType
       value: 0
@@ -25,11 +29,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7622467460006093871, guid: f68789f45730f3f48ae5576dd5a4f52a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16
+      value: -16.723976
       objectReference: {fileID: 0}
     - target: {fileID: 7622467460006093871, guid: f68789f45730f3f48ae5576dd5a4f52a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.79
+      value: -1.9640186
       objectReference: {fileID: 0}
     - target: {fileID: 7622467460006093871, guid: f68789f45730f3f48ae5576dd5a4f52a, type: 3}
       propertyPath: m_LocalPosition.z

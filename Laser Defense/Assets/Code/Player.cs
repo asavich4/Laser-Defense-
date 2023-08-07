@@ -31,7 +31,9 @@ public class Player : MonoBehaviour
 
     [SerializeField] float flashTimerReset = 1f;
     [SerializeField] float flashTimer = 1f;
-    [SerializeField] bool isFlashing = false;
+    public bool isFlashing = false;
+    [SerializeField] GameObject deathPrefab; 
+
 
     void Start(){
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -63,10 +65,10 @@ public class Player : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other){
     if(isFlashing == false){ 
         if (other.CompareTag("Enemy")){
-            Destroy(other.gameObject);
             lives--;
             if(lives <= 0){
                 Destroy(gameObject);
+                GameObject deathHit = Instantiate(deathPrefab, transform.position, transform.rotation);
                     }
             else{
                 isFlashing = true;
@@ -75,7 +77,7 @@ public class Player : MonoBehaviour
     }
     }
 
-    void playerFlash(){
+    public void playerFlash(){
         if (isFlashing){
             flashTimer -= Time.deltaTime;
             if(flashTimer > 0){

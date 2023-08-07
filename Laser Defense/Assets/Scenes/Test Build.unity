@@ -512,12 +512,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8815933842460022920, guid: 35f4f4d0fdfe6b64e9f1a4952034c94e, type: 3}
       propertyPath: flashTimer
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8815933842460022920, guid: 35f4f4d0fdfe6b64e9f1a4952034c94e, type: 3}
       propertyPath: isFlashing
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8815933842460022920, guid: 35f4f4d0fdfe6b64e9f1a4952034c94e, type: 3}
+      propertyPath: deathPrefab
+      value: 
+      objectReference: {fileID: 8656333506083372889, guid: ef06ab0a079f3ad4f9e189b75b18acc7, type: 3}
     - target: {fileID: 8815933842460022920, guid: 35f4f4d0fdfe6b64e9f1a4952034c94e, type: 3}
       propertyPath: fireCooldown
       value: 0.5
@@ -528,7 +532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8815933842460022920, guid: 35f4f4d0fdfe6b64e9f1a4952034c94e, type: 3}
       propertyPath: flashTimerReset
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8815933842460022922, guid: 35f4f4d0fdfe6b64e9f1a4952034c94e, type: 3}
       propertyPath: m_RootOrder

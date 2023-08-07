@@ -51,6 +51,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1033171502137284092, guid: d82b1f0d6146deb48bd4d6777fa660ed, type: 3}
+      propertyPath: deathPrefab
+      value: 
+      objectReference: {fileID: 3245862485797455376, guid: f256d48e5eca5ea47b9475f9411e2abb, type: 3}
     - target: {fileID: 1094134604031977296, guid: d82b1f0d6146deb48bd4d6777fa660ed, type: 3}
       propertyPath: m_FlipY
       value: 1
