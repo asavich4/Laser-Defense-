@@ -141,11 +141,6 @@ MonoBehaviour:
   Gun: {fileID: 7402854866244338009}
   shootSound: {fileID: 8300000, guid: 9d5406c0f7f3b294aac58ce7133e50ac, type: 3}
   fireCooldown: 0.5
-  lives: 3
-  flashTimerReset: 1
-  flashTimer: 1
-  isFlashing: 0
-  deathPrefab: {fileID: 0}
 --- !u!50 &8815933842460022921
 Rigidbody2D:
   serializedVersion: 4
