@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6ac10cff29b944a41b61612c95780320
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - playerTransform: {instanceID: 0}
+  - enemyTransform: {instanceID: 0}
+  - Lazer: {instanceID: 0}
+  - Gun: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
