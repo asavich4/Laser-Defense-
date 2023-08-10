@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lazer : MonoBehaviour
+public class PlayerLazer : MonoBehaviour
 {
     Rigidbody2D myRigidbody2d;
     BoxCollider2D LazerBox;

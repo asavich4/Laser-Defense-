@@ -118,7 +118,6 @@ MonoBehaviour:
   enemyTransform: {fileID: 7622467460006093871, guid: f68789f45730f3f48ae5576dd5a4f52a, type: 3}
   Lazer: {fileID: 3486786813568758524, guid: 6cf0dfb6745fd4444822108606819530, type: 3}
   Gun: {fileID: 5133725468317991549}
-  fireCooldown: 3
 --- !u!58 &8902834477491389262
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -180,7 +179,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5748970080003905258}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.13, y: -1.85, z: -0.004103042}
+  m_LocalPosition: {x: -0.02, y: -10.89, z: -0.004103042}
   m_LocalScale: {x: 4.0338845, y: 3.5816622, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
