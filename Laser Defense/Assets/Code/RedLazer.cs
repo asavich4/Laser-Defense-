@@ -15,9 +15,4 @@ public class RedLazer : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    void OnTriggerEnter2D(Collider2D other){
-        Destroy(gameObject);
-        Destroy(other.gameObject);
-    }
 }
