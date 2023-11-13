@@ -132,7 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37af2ecee3262764496e6e2cd7d04baa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathPrefab: {fileID: 2105289562664582959, guid: 1676a4660f740fc4a9ddc9722b324e6d, type: 3}
+  deathPrefab: {fileID: 242766893226459701, guid: cb1ea6b0dd85f8f4f81584698b830694, type: 3}
 --- !u!114 &5134667542505381752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,7 +149,6 @@ MonoBehaviour:
   enemyTransform: {fileID: 7622467460006093871}
   Lazer: {fileID: 3486786813568758524, guid: 6cf0dfb6745fd4444822108606819530, type: 3}
   Gun: {fileID: 4141940218182947150}
-  fireCooldown: 0
 --- !u!58 &8902834477491389262
 CircleCollider2D:
   m_ObjectHideFlags: 0

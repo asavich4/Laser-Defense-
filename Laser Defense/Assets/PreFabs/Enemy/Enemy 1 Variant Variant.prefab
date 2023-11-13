@@ -14,7 +14,7 @@ PrefabInstance:
     - target: {fileID: 8079279441387085307, guid: 56c4188703af97e4985943be1a3beed6, type: 3}
       propertyPath: deathPrefab
       value: 
-      objectReference: {fileID: 2105289562664582959, guid: 1676a4660f740fc4a9ddc9722b324e6d, type: 3}
+      objectReference: {fileID: 242766893226459701, guid: cb1ea6b0dd85f8f4f81584698b830694, type: 3}
     - target: {fileID: 8171474181805092695, guid: 56c4188703af97e4985943be1a3beed6, type: 3}
       propertyPath: m_Sprite
       value: 

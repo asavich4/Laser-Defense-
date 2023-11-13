@@ -8,6 +8,7 @@ public class LazerHit : MonoBehaviour
     void Start(){
         StartCoroutine(DestroyPlayer(gameObject));
     }
+    
 IEnumerator DestroyPlayer(GameObject deathPrefab){
         yield return new WaitForSeconds(DeathTime);
         Destroy(gameObject);

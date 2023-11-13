@@ -54,7 +54,7 @@ PrefabInstance:
     - target: {fileID: 1033171502137284092, guid: d82b1f0d6146deb48bd4d6777fa660ed, type: 3}
       propertyPath: deathPrefab
       value: 
-      objectReference: {fileID: 3245862485797455376, guid: f256d48e5eca5ea47b9475f9411e2abb, type: 3}
+      objectReference: {fileID: 242766893226459701, guid: cb1ea6b0dd85f8f4f81584698b830694, type: 3}
     - target: {fileID: 1094134604031977296, guid: d82b1f0d6146deb48bd4d6777fa660ed, type: 3}
       propertyPath: m_FlipY
       value: 1
