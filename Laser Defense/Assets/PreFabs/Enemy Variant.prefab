@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 693708400437642074, guid: f68789f45730f3f48ae5576dd5a4f52a, type: 3}
+      propertyPath: deathPrefab
+      value: 
+      objectReference: {fileID: 242766893226459701, guid: cb1ea6b0dd85f8f4f81584698b830694, type: 3}
     - target: {fileID: 4759179473132309130, guid: f68789f45730f3f48ae5576dd5a4f52a, type: 3}
       propertyPath: m_Name
       value: Enemy Variant
