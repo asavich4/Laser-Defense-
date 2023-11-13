@@ -146,6 +146,7 @@ MonoBehaviour:
   flashTimer: 1.5
   isFlashing: 0
   deathPrefab: {fileID: 242766893226459701, guid: cb1ea6b0dd85f8f4f81584698b830694, type: 3}
+  applyCameraShake: 1
 --- !u!50 &8815933842460022921
 Rigidbody2D:
   serializedVersion: 4

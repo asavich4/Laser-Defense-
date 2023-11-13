@@ -33,8 +33,12 @@ public class Player : MonoBehaviour
     [SerializeField] float flashTimer = 1f;
     public bool isFlashing = false;
     [SerializeField] GameObject deathPrefab; 
+    [SerializeField] bool applyCameraShake;
+    CameraShake cameraShake;
 
-
+    void Awake(){
+         cameraShake = Camera.main.GetComponent<CameraShake>();
+    }
     void Start(){
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
@@ -66,6 +70,7 @@ public class Player : MonoBehaviour
     if(isFlashing == false){ 
         if (other.CompareTag("Enemy")){
             lives--;
+            shakeCamera();
             if(lives <= 0){
                 Destroy(gameObject);
                 GameObject deathHit = Instantiate(deathPrefab, transform.position, transform.rotation);
@@ -90,6 +95,12 @@ public class Player : MonoBehaviour
         }
         else{
             playerSpriteRenderer.enabled = true;
+        }
+    }
+
+    void shakeCamera(){
+        if(cameraShake != null && applyCameraShake){
+            cameraShake.Play();
         }
     }
 
