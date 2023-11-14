@@ -21,4 +21,4 @@ MonoBehaviour:
   timeBetweenSpawns: 1
   spawnTimeVariance: 0
   minimumSpawnTime: 0.2
-  moveSpeed: 6
+  moveSpeed: 11
