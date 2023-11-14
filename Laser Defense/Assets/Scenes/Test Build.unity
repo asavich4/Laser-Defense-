@@ -462,6 +462,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootingClip: {fileID: 8300000, guid: 9d5406c0f7f3b294aac58ce7133e50ac, type: 3}
   shootingVolume: 0.25
+  deathSound: {fileID: 8300000, guid: 5470ca7d2eb80614692e763dd0a29e5c, type: 3}
+  deathVolume: 0.3
 --- !u!4 &1275859738
 Transform:
   m_ObjectHideFlags: 0

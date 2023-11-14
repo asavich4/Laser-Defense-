@@ -11,9 +11,12 @@ public class PathFInder : MonoBehaviour
     int waypointIndex = 0;
     [SerializeField] GameObject deathPrefab; 
     Player player;
+    AudioPlayer audioPlayer;
+
 
     void Awake() {
         enemySpawner = FindObjectOfType<Spawner>();
+        audioPlayer = FindObjectOfType<AudioPlayer>();
     }
     void Start(){
         waveSO = enemySpawner.GetCurrentWave();
@@ -41,6 +44,7 @@ public class PathFInder : MonoBehaviour
 }
     void OnTriggerEnter2D(Collider2D other){
     if(other.CompareTag("Lazer")){
+        audioPlayer.PlayDeathClip();
         GameObject deathHit = Instantiate(deathPrefab, transform.position, transform.rotation);
     }
     }
