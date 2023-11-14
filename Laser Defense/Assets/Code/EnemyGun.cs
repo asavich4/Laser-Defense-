@@ -9,6 +9,11 @@ public class EnemyGun : MonoBehaviour
     [SerializeField] GameObject Lazer;
     [SerializeField] Transform Gun;
     bool canFire = true;
+    AudioPlayer audioPlayer;
+
+    void Awake(){
+         audioPlayer = FindObjectOfType<AudioPlayer>();
+    }
 
     void Update(){
         EnemyFire();
@@ -19,6 +24,7 @@ public class EnemyGun : MonoBehaviour
     float enemyX = Mathf.Ceil(enemyTransform.position.x);
     if (Mathf.Approximately(playerX, enemyX)){
          if(canFire == true){
+          audioPlayer.PlayShootingClip();
           canFire = false;
           Instantiate(Lazer, Gun.position, transform.rotation);
          }

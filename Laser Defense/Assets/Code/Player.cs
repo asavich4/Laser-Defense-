@@ -74,6 +74,7 @@ public class Player : MonoBehaviour
         if (other.CompareTag("Enemy")){
             lives--;
             shakeCamera();
+            audioPlayer.PlayDeathClip();
             if(lives <= 0){
                 Destroy(gameObject);
                 GameObject deathHit = Instantiate(deathPrefab, transform.position, transform.rotation);
