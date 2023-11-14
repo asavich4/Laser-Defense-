@@ -394,6 +394,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shakeDuration: 0.5
   shakeMagnitude: 0.25
+--- !u!114 &720394930 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8815933842460022920, guid: 35f4f4d0fdfe6b64e9f1a4952034c94e, type: 3}
+  m_PrefabInstance: {fileID: 8815933841536548777}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9068cb960cff74948b4e0eab3004ba08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &764404376
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,6 +649,7 @@ GameObject:
   - component: {fileID: 966554323}
   - component: {fileID: 966554322}
   - component: {fileID: 966554321}
+  - component: {fileID: 966554325}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -727,6 +739,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &966554325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966554320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cb35e39285f5cd47a4b502546156e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSlider: {fileID: 1020286343}
+  playerHealth: {fileID: 720394930}
+  scoreText: {fileID: 2034589161}
 --- !u!1 &998946013
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,7 +805,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.47219422, b: 0.754717, a: 1}
+  m_Color: {r: 0.3661506, g: 0.16220185, b: 0.4245283, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1090,7 +1117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.08962262, g: 0.12394639, b: 1, a: 1}
+  m_Color: {r: 0.3915094, g: 0.41511464, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1581,7 +1608,7 @@ GameObject:
   - component: {fileID: 2034589162}
   - component: {fileID: 2034589161}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1627,7 +1654,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 243523452352
+  m_text: 20000
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 81542a729004a8e49a60e6d80cc1d78d, type: 2}
   m_sharedMaterial: {fileID: -9000972420455892553, guid: 81542a729004a8e49a60e6d80cc1d78d, type: 2}
@@ -1654,7 +1681,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56.8
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
