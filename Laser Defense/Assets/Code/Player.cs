@@ -35,9 +35,11 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject deathPrefab; 
     [SerializeField] bool applyCameraShake;
     CameraShake cameraShake;
+    AudioPlayer audioPlayer;
 
     void Awake(){
          cameraShake = Camera.main.GetComponent<CameraShake>();
+         audioPlayer = FindObjectOfType<AudioPlayer>();
     }
     void Start(){
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -57,7 +59,8 @@ public class Player : MonoBehaviour
     IEnumerator FireCooldown(){
         canFire = false;
         Instantiate(Lazer, Gun.position, transform.rotation);
-        AudioSource.PlayClipAtPoint(shootSound, Camera.main.transform.position);
+        //AudioSource.PlayClipAtPoint(shootSound, Camera.main.transform.position);
+        audioPlayer.PlayShootingClip();
         yield return new WaitForSeconds(fireCooldown);
         canFire = true;
     }
