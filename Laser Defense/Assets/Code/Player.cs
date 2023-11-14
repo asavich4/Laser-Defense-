@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -38,13 +39,13 @@ public class Player : MonoBehaviour
     CameraShake cameraShake;
     AudioPlayer audioPlayer;
     ScoreKeeper scoreKeeper;
-    [SerializeField] bool isPlayer;
-    [SerializeField] int score;
+    LevelManager levelManager;
 
     void Awake(){
          cameraShake = Camera.main.GetComponent<CameraShake>();
          audioPlayer = FindObjectOfType<AudioPlayer>();
          scoreKeeper = FindObjectOfType<ScoreKeeper>();
+         levelManager = FindObjectOfType<LevelManager>();
     }
     void Start(){
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -81,6 +82,7 @@ public class Player : MonoBehaviour
             shakeCamera();
             audioPlayer.PlayDeathClip();
             if(lives <= 0){
+                levelManager.GameOver();
                 Destroy(gameObject);
                 GameObject deathHit = Instantiate(deathPrefab, transform.position, transform.rotation);
                     }
