@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class Player : MonoBehaviour
 {
@@ -36,10 +37,14 @@ public class Player : MonoBehaviour
     [SerializeField] bool applyCameraShake;
     CameraShake cameraShake;
     AudioPlayer audioPlayer;
+    ScoreKeeper scoreKeeper;
+    [SerializeField] bool isPlayer;
+    [SerializeField] int score;
 
     void Awake(){
          cameraShake = Camera.main.GetComponent<CameraShake>();
          audioPlayer = FindObjectOfType<AudioPlayer>();
+         scoreKeeper = FindObjectOfType<ScoreKeeper>();
     }
     void Start(){
         myRigidbody = GetComponent<Rigidbody2D>();
@@ -84,6 +89,10 @@ public class Player : MonoBehaviour
             }
         }
     }
+    }
+
+    public int GetHealth(){
+        return lives;
     }
 
     public void playerFlash(){

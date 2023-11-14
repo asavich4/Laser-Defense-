@@ -10,11 +10,13 @@ public class PlayerLazer : MonoBehaviour
     float playerDirection;
     [SerializeField] float xArrow;
     [SerializeField] float yArrow;
+    ScoreKeeper scoreKeeper;
     void Start(){
         myRigidbody2d = GetComponentInChildren<Rigidbody2D>();
         LazerBox = GetComponentInChildren<BoxCollider2D>();
         player = FindObjectOfType<Player>();
         playerDirection = player.transform.localScale.x * yArrow;
+        scoreKeeper = FindObjectOfType<ScoreKeeper>();
     }
 
     void Update(){
@@ -28,6 +30,7 @@ public class PlayerLazer : MonoBehaviour
         if (other.CompareTag("Enemy")){
             Destroy(other.gameObject);
             Destroy(gameObject);
+            scoreKeeper.ModifyScore(100);
         }
     }
             
