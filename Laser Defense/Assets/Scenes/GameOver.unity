@@ -648,11 +648,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 963214561}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cb35e39285f5cd47a4b502546156e42, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e6b6a21292377144af6096c1e658628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthSlider: {fileID: 0}
-  playerHealth: {fileID: 0}
   scoreText: {fileID: 557630417}
 --- !u!1 &1057858761
 GameObject:
@@ -792,6 +790,14 @@ PrefabInstance:
     - target: {fileID: 3180936402473487802, guid: a0456440d75bcb84ca50e4c8cc5bf0f2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3180936402665263237, guid: a0456440d75bcb84ca50e4c8cc5bf0f2, type: 3}
+      propertyPath: moveSpeed.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3180936404473585419, guid: a0456440d75bcb84ca50e4c8cc5bf0f2, type: 3}
+      propertyPath: moveSpeed.y
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0456440d75bcb84ca50e4c8cc5bf0f2, type: 3}
